@@ -38,7 +38,7 @@
 		out.print("접속성공");
 
 		//쿼리문 수행
-		String sql="select*from shop_member where mid=?andpass=?";
+		String sql="select*from shop_member where mid=? and pass=?";
 		pstmt=con.prepareStatement(sql);//쿼리준비
 		pstmt.setString(1,id);
 		pstmt.setString(2,pass);
